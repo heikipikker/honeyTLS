@@ -10,3 +10,12 @@ Alternatively, you can use [@Andrew___Morris](https://twitter.com/Andrew___Morri
 
 ### Reference:
 - [JA3](https://github.com/salesforce/ja3) - A method for profiling SSL/TLS Clients
+
+### TODO:
+
+- [x] Splunk to CSV script
+- [ ] Enrich the collected data
+    - [ ] [GreyNoise Intelligence API](https://github.com/GreyNoise-Intelligence/api.greynoise.io)
+    - [ ] [Cymon API](http://docs.cymon.io/)
+- [ ] Visualization script
+- [ ] Complete the documentation and analysis report
