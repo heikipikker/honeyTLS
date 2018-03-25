@@ -1,0 +1,8 @@
+dpkg -i splunkforwarder-7.0.2-03bbabbd5c0f-linux-2.6-amd64.deb
+cd /opt/splunkforwarder/bin
+./splunk start --accept-license
+./splunk enable boot-start
+./splunk add forward-server yoursplunkserver:9997 -auth admin:yourpass
+./splunk add monitor /var/log/nginx/error.log -sourcetype nginx_error
+./splunk add monitor /var/log/nginx/access.log -sourcetype nginx_access
+./splunk add monitor /opt/bro/logs/current/ -sourcetype bro
